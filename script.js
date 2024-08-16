@@ -13,3 +13,8 @@ document.addEventListener('click', (event) => {
     const click = `X: ${event.clientX}, Y: ${event.clientY}`;
     document.getElementById('mouse-click').textContent = click;
 });
+//script to show the keycode assigned to each key press made on the page. 
+document.addEventListener(`keydown`, (event) =>{
+    const keyCode = `Key-Code: ${event.keyCode}`;
+    document.getElementById('key-value').textContent=keyCode;
+});
